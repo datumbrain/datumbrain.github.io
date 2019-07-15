@@ -1,7 +1,7 @@
 {
-  "name": "laap-app-landing-page",
+  "name": "Datum Brain",
   "version": "1.0.0",
-  "description": "Lapp react version",
+  "description": "Big Data, ML & AI Solutions",
   "main": "index.js",
   "keywords": [
     "react",
