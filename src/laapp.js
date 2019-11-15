@@ -6,6 +6,10 @@
  * https://5studios.net
  */
 
+ //Google Analytics
+ import ReactGA from 'react-ga';
+
+
 // FontAwesome used icons
 import { library } from "@fortawesome/fontawesome-svg-core";
 import {
@@ -34,7 +38,8 @@ import {
 import {
   faFacebook,
   faTwitter,
-  faInstagram
+  faInstagram,
+  faLinkedin
 } from "@fortawesome/free-brands-svg-icons";
 
 // general js and styles
@@ -64,5 +69,11 @@ library.add(
 
   faFacebook,
   faTwitter,
-  faInstagram
+  faInstagram,
+  faLinkedin
 );
+
+function initializeReactGA() {
+  ReactGA.initialize('UA-148358146-1');
+  ReactGA.pageview('/');
+}

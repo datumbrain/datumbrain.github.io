@@ -46,7 +46,7 @@ $cyan-light: #42d2f1; // ending scale #a8f0fd
 $theme-colors: (
   primary: $living-coral, //$blue,
   secondary: $radiant-yellow, //$steel,
-  alternate: $ibiza-blue,
+  alternate: $gray-600,
   contrast: $white,
 
   success: $green,
@@ -65,7 +65,7 @@ $body-color: $beluga-dark-4x;
 // Links
 //
 // Style anchor elements.
-$link-color: $ibiza-blue;
+$link-color: $yellow;
 $link-hover-decoration: none;
 
 // Components
@@ -83,7 +83,7 @@ $enable-responsive-font-sizes: true;
 // Typography
 //
 // Font, line-height, and color for body text, headings, and more.
-$font-family-base: 'Lato', sans-serif;
+$font-family-base: 'Montserrat', sans-serif;
 
 $font-weight-lighter: 100;
 $font-weight-semibold: 600 !default;

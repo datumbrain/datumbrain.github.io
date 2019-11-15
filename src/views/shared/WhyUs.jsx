@@ -6,19 +6,19 @@ const renderFeatures = () => {
   let features = [];
   const items = [
     {
-      name: "Integrations",
+      name: "Scalable",
       icon: "plug",
-      description: "Aut debitis deserunt ea explicabo hic id incidunt, minus"
+      description: "Scale your solution with absolutely no hassle"
     },
     {
-      name: "Marketing",
+      name: "Custom Analytics",
       icon: "heart",
-      description: "Aliquam amet assumenda debitis dicta distinctio eaque enim"
+      description: "Get the stats that matter to you most"
     },
     {
-      name: "Support",
+      name: "Cloud Deployment",
       icon: "headphones",
-      description: "Consequatur doloremque illum libero nam. Hic, vitae?"
+      description: "Deploy on secure and fast cloud servers"
     }
   ];
 
@@ -55,44 +55,49 @@ const WhyUs = () => {
 
       <div className="container pb-8 bring-to-front">
         <div className="section-heading text-center">
-          <h2 className="heading-line">Why you should choose Laap?</h2>
+          <h2 className="heading-line">Why choose Datum Brain?</h2>
           <p className="text-muted lead mx-auto">
-            Laapp is designed to provide you with the last trends in web design.
-            It'll help you to focus on your product, launch your website faster
-            and reach more customer.
+            Years of experience in technologies like Scala and Play Framework,
+            enable us to provide solutions to problems that are considered too
+            complex to solve by others.{" "}
+          </p>
+          <p className="text-muted lead mx-auto">
+            No matter how unique your requirements may be, we can work on
+            extracting the ideal solution and deliver it in a robust and
+            extremely user friendly way. You are surely in for a surprise!
           </p>
         </div>
 
         <div className="row gap-y">
           <div className="col-md-6">
             <h4 className="bold text-alternate">
-              It all start by choosing the right tools
+              We understand your data better than anyone!
             </h4>
             <p className="text-muted lead mb-5">
-              When you're looking for a template you want it to stand-out. Laapp
-              comes with many customizable components.
+              Our mission is to empower businesses by providing quality products
+              and solutions to tame data.
             </p>
 
             <ul className="list-unstyled why-icon-list">{renderFeatures()}</ul>
 
-            <hr className="my-5" />
+            {/* <hr className="my-5" />
             <div className="text-center text-md-left">
               <Link to="#!" className="btn btn-primary text-contrast">
                 Know More
               </Link>
-            </div>
+            </div> */}
           </div>
 
           <div className="col-md-6">
             <div className="rotated-mockups device-twin">
               <div className="browser absolute shadow-lg">
                 <img
-                  src={require("assets/img/screens/tablet/1.png")}
+                  src={require("assets/img/screens/app/scalable.png")}
                   alt="..."
                 />
               </div>
 
-              <div className="front iphone light">
+              {/* <div className="front iphone light">
                 <div className="screen">
                   <img
                     src={require("assets/img/screens/app/1.png")}
@@ -101,7 +106,7 @@ const WhyUs = () => {
                 </div>
 
                 <div className="notch" />
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

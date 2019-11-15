@@ -8,19 +8,19 @@
  * Feel free to modify the palette according to your needs
  */
 
-$auxiliary: #fe2983;
+$auxiliary: #f8da32;
 
 $living-coral-dark-5x: #803730;
 $living-coral-dark-4x: #984139;
 $living-coral-dark-3x: #b14d43;
 $living-coral-dark-2x: #cb584d;
 $living-coral-dark: #e56357;
-$living-coral: #ff6f61;
+$living-coral: #ffc952;
 $living-coral-light: #ff8c7c;
 $living-coral-light-2x: #ffa597;
 $living-coral-light-3x: #ffbdb1;
 $living-coral-light-4x: #ffd3cb;
-$living-coral-light-5x: #ffeae5;
+$living-coral-light-5x: #ffeae5; //navbar
 
 $ibiza-blue-dark-5x: #084166;
 $ibiza-blue-dark-4x: #084c76;
@@ -72,35 +72,38 @@ $beluga-light-5x: #edf4f8; // #f9fbfd
 
 // [ SOCIAL COLORS ]
 $brand-colors: () !default;
-$brand-colors: map-merge((
-        "facebook":   #3b5998,
-        "google":     #dd4b39,
-        "gplus":      #dd4b39,
-        "twitter":    #00aced,
-        "linkedin":   #007bb6,
-        "pinterest":  #cb2027,
-        "git":        #666666,
-        "tumblr":     #32506d,
-        "vimeo":      #aad450,
-        "youtube":    #bb0000,
-        "flickr":     #ff0084,
-        "reddit":     #ff4500,
-        "dribbble":   #ea4c89,
-        "skype":      #00aff0,
-        "instagram":  #517fa4,
-        "lastfm":     #c3000d,
-        "soundcloud": #ff8800,
-        "behance":    #1769ff,
-        "envato":     #82b541,
-        "medium":     #00ab6c,
-        "spotify":    #1db954,
-        "quora":      #a82400,
-        "xing":       #026466,
-        "snapchat":   #fffc00,
-        "telegram":   #0088cc,
-        "whatsapp":   #075e54,
-        "rss":        #f26522,
-), $brand-colors);
+$brand-colors: map-merge(
+  (
+    "facebook": #3b5998,
+    "google": #dd4b39,
+    "gplus": #dd4b39,
+    "twitter": #00aced,
+    "linkedin": #007bb6,
+    "pinterest": #cb2027,
+    "git": #666666,
+    "tumblr": #32506d,
+    "vimeo": #aad450,
+    "youtube": #bb0000,
+    "flickr": #ff0084,
+    "reddit": #ff4500,
+    "dribbble": #ea4c89,
+    "skype": #00aff0,
+    "instagram": #517fa4,
+    "lastfm": #c3000d,
+    "soundcloud": #ff8800,
+    "behance": #1769ff,
+    "envato": #82b541,
+    "medium": #00ab6c,
+    "spotify": #1db954,
+    "quora": #a82400,
+    "xing": #026466,
+    "snapchat": #fffc00,
+    "telegram": #0088cc,
+    "whatsapp": #075e54,
+    "rss": #f26522
+  ),
+  $brand-colors
+);
 
 $color-accent: $living-coral !default;
 $color-accent-inverse: #ffffff !default;

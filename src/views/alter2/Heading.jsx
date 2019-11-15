@@ -20,7 +20,7 @@ const shapes = [
 
 const Heading = () => {
   return (
-    <header className="header alter2-header section">
+    <header id="home" className="header alter2-header section">
       <div className="shapes-container">
         {/* diagonal shapes */}
         {shapes.map((shape, i) => (
@@ -82,46 +82,43 @@ const Heading = () => {
                 icon={["far", "lightbulb"]}
                 className="text-primary mr-2"
               />
-              <span className="text-primary">Awesome</span> Landing Page
+              <span className="text-primary">Analytics</span> you can trust!
             </span>
 
-            <h1 className="display-4 display-md-2 mt-3">
-              <span className="bold">Laapp</span>
-            </h1>
+            <h3 className="display-4 mt-3">
+              <span className="bold">Datum Brain</span>
+            </h3>
             <p className="lead bold text-primary">
-              Premium Startup &amp;{" "}
-              <span className="head-line-2">App Landing Page</span>
+              Data Engineering / Big Data / Data Science
             </p>
 
             <p className="lead">
-              Besides its beautiful design. Laapp is an incredibly rich core
-              framework for you to showcase your App.
+              We have specialized in most widely used {"&"} horizontally scalable frameworks.
             </p>
 
-            <nav className="nav my-5">
+            <nav className="nav my-3">
               <a
-                href="#!"
-                className="btn btn-rounded btn-alternate mr-2 mr-md-5"
+                href="#features"
+                className="btn btn-rounded btn-alternate mr-5 mr-md-5"
               >
-                Know more{" "}
+                About Us
                 <FontAwesomeIcon
                   icon={["fas", "long-arrow-alt-right"]}
                   className="ml-2"
                 />
               </a>
-              <a
-                href="#demos"
-                className="btn btn-rounded btn-outline-alternate scrollto"
-              >
-                Free trial
-              </a>
             </nav>
           </Col>
 
           <Col md="6">
-            <div className="iphone front mx-auto">
+            {/* <div className="iphone front mx-auto"> */}
+            <div className="browser absolute shadow lg">
               <div className="screen shadow-box">
-                <img src={require("assets/img/screens/app/3.png")} alt="..." />
+                <img
+                  style={{ opacity: 0.9 }} // if you need to change opacity later
+                  src={require("assets/img/screens/app/shot-neo4j.png")}
+                  alt="..."
+                />
               </div>
               <div className="notch" />
             </div>

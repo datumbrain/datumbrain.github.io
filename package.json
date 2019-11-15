@@ -1,5 +1,5 @@
 {
-  "name": "Datum Brain",
+  "name": "datumbrain",
   "version": "1.0.0",
   "description": "Big Data, ML & AI Solutions",
   "main": "index.js",
@@ -13,7 +13,6 @@
     "design-system-react"
   ],
   "author": "5studios.net",
-  "homepage": "https://5studios.net/themes/laapp-react",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -22,7 +21,9 @@
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
     "compile-sass": "node-sass src/assets/sass/laapp.scss src/assets/css/laapp.css",
     "minify-sass": "node-sass src/assets/sass/laapp.scss src/assets/css/laapp.min.css --output-style compressed",
-    "map-sass": "node-sass src/assets/sass/laapp.scss src/assets/css/laapp.css --source-map true"
+    "map-sass": "node-sass src/assets/sass/laapp.scss src/assets/css/laapp.css --source-map true",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -50,6 +51,7 @@
     "react": "16.8.6",
     "react-datetime": "2.16.3",
     "react-dom": "16.8.6",
+    "react-ga": "^2.6.0",
     "react-id-swiper": "^2.1.2",
     "react-odometerjs": "^2.1.1",
     "react-reveal": "^1.2.2",
@@ -63,6 +65,9 @@
   },
   "devDependencies": {
     "@types/react": "16.8.16",
-    "typescript": "3.4.5"
+    "typescript": "3.4.5",
+    "@storybook/react": "^5.1.9",
+    "@storybook/addon-actions": "^5.1.9",
+    "@storybook/addon-links": "^5.1.9"
   }
 }

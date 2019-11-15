@@ -32,12 +32,12 @@ class Alternative2 extends React.Component {
 
           {/* Shared Components */}
           <MultipleDesignBlocks />
-          <FeaturesCantMiss />
-          <Pricing />
           <Integration />
+          {/* <FeaturesCantMiss /> */}
+          {/* <Pricing /> */}
           <WhyUs />
-          <Faqs />
-          <StartFree />
+          {/* <Faqs /> */}
+          {/* <StartFree /> */}
           <Subscribe />
         </main>
         <DefaultFooter />

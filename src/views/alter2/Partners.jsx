@@ -17,7 +17,7 @@ const Partners = () => {
     <section class="section">
       <div class="container py-5 border-bottom">
         <Swiper {...params}>
-          {[1, 2, 3, 4, 5, 6].map(i => (
+          {[1, 2, 3, 4, 5, 6, 7].map(i => (
             <div class="swiper-slide">
               <img
                 src={require(`assets/img/logos/${i}.png`)}

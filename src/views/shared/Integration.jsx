@@ -5,9 +5,9 @@ import MoreInfoButton from "components/MoreInfoButton.jsx";
 const renderBubbles = () => {
   let bubbles = [];
   const items = [
-    { icon: "apx", name: "Autoprefixer" },
+    // { icon: "apx", name: "Autoprefixer" },
     { icon: "bs", name: "Bootstrap" },
-    { icon: "cordova", name: "Cordova" },
+    // { icon: "cordova", name: "Cordova" },
     { icon: "css", name: "CSS" },
     { icon: "fa", name: "Fontawesome" },
     { icon: "html", name: "HTML" },
@@ -15,9 +15,9 @@ const renderBubbles = () => {
     { icon: "npm", name: "Npm" },
 
     { icon: "sass", name: "SASS" },
-    { icon: "apx", name: "Autoprefixer" },
+    // { icon: "apx", name: "Autoprefixer" },
     { icon: "bs", name: "Bootstrap" },
-    { icon: "cordova", name: "Cordova" },
+    // { icon: "cordova", name: "Cordova" },
     { icon: "css", name: "CSS" },
     { icon: "fa", name: "Fontawesome" },
     { icon: "html", name: "HTML" },
@@ -60,16 +60,20 @@ const Integration = () => {
           <Col md="6">
             <div className="section-heading">
               <p className="text-alternate text-uppercase bold">
-                Extending core
+                Latest Stacks
               </p>
-              <h2 className="heading-line">Integrations to make it better</h2>
+              <h2 className="heading-line">Solutions tailored for you</h2>
               <p className="lead text-muted">
-                Ever wonder about the wonder of Laap: We count on hundreds of
-                friends contributing day by day to make Laapp a wonderful tool
+                Our extensive research and development along with hands on expereince on the latests
+                innovations grants you a solution that is perfectly fit for your
+                use case.
               </p>
             </div>
 
-            <MoreInfoButton text="Explore all integration" to="#!" />
+            <MoreInfoButton
+              text="Explore our Github"
+              to="https://github.com/datumbrain"
+            />
           </Col>
         </Row>
       </Container>

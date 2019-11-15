@@ -13,27 +13,7 @@ import "./laapp.js";
 
 ReactDOM.render(
   <BrowserRouter>
-    <Switch>
-      <Route path="/" exact render={props => <Index {...props} />} />
-
-      <Route
-        path="/alter-1"
-        exact
-        render={props => <Alternative1 {...props} />}
-      />
-      <Route
-        path="/alter-2"
-        exact
-        render={props => <Alternative2 {...props} />}
-      />
-      <Route
-        path="/alter-3"
-        exact
-        render={props => <Alternative3 {...props} />}
-      />
-
-      <Redirect to="/" />
-    </Switch>
+      <Route path="/" exact render={props => <Alternative2 {...props} />} />
   </BrowserRouter>,
   document.getElementById("root")
 );

@@ -34,7 +34,7 @@ const renderItems = () => {
 
 const MultipleDesignBlocks = () => {
   return (
-    <section className="section powered-design">
+    <section id="portfolio" className="section powered-design">
       <div className="shapes-container">
         <div className="shape shape-circle shape-circle-1">
           <Fade bottom right duration={1500}>
@@ -60,20 +60,16 @@ const MultipleDesignBlocks = () => {
         <Row className="gap-y align-items-center">
           <Col md="6">
             <div className="section-heading">
-              <h2 className="heading-line">
-                Powered with multiple design blocks
-              </h2>
+              <h2 className="heading-line">Featured Work</h2>
               <p className="lead text-muted">
-                Unlock the power of Web Design. Laapp comes with multiple
-                reusable code blocks you can use to build awesome web pages.
+                Our team has worked on some really awesome products and
+                delivered exceptional solutions.
               </p>
             </div>
-
-            <MoreInfoButton
+            {/* <MoreInfoButton
               className="btn btn-outline-alternate more-link mt-0"
-              text="Now is the time"
-              to="#!"
-            />
+              text="Now is the time" */}
+            {/* <a href="mailto:contact@predictdata.io">Get Started Now!</a> */}
           </Col>
 
           <Col md="6">{renderItems()}</Col>

@@ -10,18 +10,21 @@
   }
 
   .browser {
-    transform: translate(40%, -10%) rotate3d(.342,-.94,0,22deg) rotateZ(7deg);
+    transform: translate(40%, -10%) rotate3d(0.342, -0.94, 0, 22deg)
+      rotateZ(7deg);
     width: 380px;
     bottom: 0;
 
     @include media-breakpoint-up($grid-float-breakpoint) {
       bottom: auto;
       width: 780px;
+      margin-left: -60%;
     }
   }
 
   .iphone {
-    transform: translate(-20%, 10%) rotate3d(.5,.866,0,16deg) rotateZ(-7deg);
+    transform: translate(-20%, 10%) rotate3d(0.5, 0.866, 0, 16deg)
+      rotateZ(-7deg);
 
     @include media-breakpoint-down($grid-float-breakpoint-max) {
       width: 60%;
@@ -44,13 +47,16 @@
       height: 10px;
       background-color: $wcu-pipe-bg-color;
 
-      &, &:before, &:after {
+      &,
+      &:before,
+      &:after {
         transform: rotate(-35deg);
         border-radius: 50px;
       }
 
-      &:before, &:after {
-        content: '';
+      &:before,
+      &:after {
+        content: "";
         position: absolute;
         top: 0;
         bottom: 0;

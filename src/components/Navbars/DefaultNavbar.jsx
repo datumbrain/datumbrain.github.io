@@ -101,19 +101,21 @@ class DefaultNavbar extends React.Component {
 
             <Nav className="nav navbar-nav ml-auto" navbar>
               <NavItem>
-                <NavLink href="#!">Home</NavLink>
+                <NavLink href="#home">Home</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#!">About</NavLink>
+                <NavLink href="#features">About</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#!">Product</NavLink>
+                <NavLink href="#portfolio">Portfolio</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#!">Pricing</NavLink>
+                <NavLink href="http://blog.datumbrain.com" target="_blank">
+                  Blog
+                </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#!">Contact</NavLink>
+                <NavLink href="#contact">Contact</NavLink>
               </NavItem>
             </Nav>
           </div>

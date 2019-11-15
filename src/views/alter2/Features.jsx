@@ -6,21 +6,21 @@ const renderFeatures = () => {
   const elements = [
     {
       icon: "pe-7s-diamond",
-      title: "Powerful Design",
+      title: "Big Data",
       description:
-        "Ab ad aliquam assumenda beatae commodi distinctio dolore dolorum earum error et, exercitationem"
+        "Over 17+ Businesses empowered using the latest Big Data technologies. "
     },
     {
       icon: "pe-7s-tools",
-      title: "Professional Tools",
+      title: "Machine Learning",
       description:
-        "Blanditiis cumque, eius error est et exercitationem, explicabo hic natus nobis odit porro quia"
+        "Data never lies! Predict results to enable informed decision making. "
     },
     {
       icon: "pe-7s-light",
-      title: "Creative Content",
+      title: "Artificial Intelligence",
       description:
-        "A animi aperiam cupiditate eum incidunt, magni mollitia nam nemo non officia omnis, quasi quisquam"
+        "Experience AI in its true definition and utilize the maximum benefits of this wonderful technology."
     }
   ];
 
@@ -42,12 +42,11 @@ const Features = () => {
     <section id="features" className="section features">
       <Container>
         <div className="section-heading text-center">
-          <h2 className="heading-line">Premium features</h2>
+          <h2 className="heading-line">Who we are?</h2>
           <p className="lead text-muted">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex, nulla,
-            voluptates. Architecto eum minima necessitatibus quo reiciendis!
-            Aliquam culpa doloremque eaque esse illo, nemo nesciunt nobis quia
-            sapiente tenetur veniam.
+            Datum Brain is a cutting edge endeavor that specifically caters to
+            the latest technologies. We have centered our skills and done
+            extensive work in the following three disciplines:
           </p>
         </div>
 

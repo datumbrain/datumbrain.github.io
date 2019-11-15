@@ -17,13 +17,12 @@ const DefaultFooter = () => {
             />
 
             <p>
-              Laapp, a carefully crafted and powerful HTML5 template, it's
-              perfect to showcase your App or Startup
+              A Lahore/New York City based technology start-up, pioneering in data analytics, data science {"&"} data engineering.
             </p>
           </Col>
 
           <Col md="2">
-            <Nav className="flex-column" tag="nav">
+            {/* <Nav className="flex-column" tag="nav">
               <NavLink className="py-2 text-contrast" href="#">
                 About
               </NavLink>
@@ -33,11 +32,11 @@ const DefaultFooter = () => {
               <NavLink className="py-2 text-contrast" href="#">
                 Blog
               </NavLink>
-            </Nav>
+            </Nav> */}
           </Col>
 
           <Col md="2">
-            <Nav className="flex-column" tag="nav">
+            {/* <Nav className="flex-column" tag="nav">
               <NavLink className="py-2 text-contrast" href="#">
                 Features
               </NavLink>
@@ -47,11 +46,11 @@ const DefaultFooter = () => {
               <NavLink className="py-2 text-contrast" href="#">
                 Customers
               </NavLink>
-            </Nav>
+            </Nav> */}
           </Col>
 
           <Col md="2">
-            <Nav className="flex-column" tag="nav">
+            {/* <Nav className="flex-column" tag="nav">
               <NavLink className="nav-item py-2 text-contrast" href="#">
                 Careers
               </NavLink>
@@ -61,7 +60,7 @@ const DefaultFooter = () => {
               <NavLink className="nav-item py-2 text-contrast" href="#">
                 Search
               </NavLink>
-            </Nav>
+            </Nav> */}
           </Col>
 
           <Col md="2">
@@ -69,18 +68,24 @@ const DefaultFooter = () => {
 
             <nav className="nav justify-content-around">
               <a
-                href="https://facebook.com/5studios.net"
+                href="https://www.facebook.com/datumbrain"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-circle btn-sm brand-facebook"
               >
                 <FontAwesomeIcon icon={["fab", "facebook"]} />
               </a>
-              <a href="#!" className="btn btn-circle btn-sm brand-twitter">
+              <a
+                href="https://www.twitter.com/datumbrain"
+                className="btn btn-circle btn-sm brand-twitter"
+              >
                 <FontAwesomeIcon icon={["fab", "twitter"]} />
               </a>
-              <a href="#!" className="btn btn-circle btn-sm brand-instagram">
-                <FontAwesomeIcon icon={["fab", "instagram"]} />
+              <a
+                href="https://www.linkedin.com/company/datum-brain/"
+                className="btn btn-circle btn-sm brand-linkedin"
+              >
+                <FontAwesomeIcon icon={["fab", "linkedin"]} />
               </a>
             </nav>
           </Col>
@@ -93,13 +98,12 @@ const DefaultFooter = () => {
             <p className="mt-2 mb-0 text-center text-md-left">
               © {new Date().getFullYear()}
               <a
-                href="https://5studios.net"
+                href="https://datumbrain.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                5studios
+                &nbsp; Datum Brain
               </a>
-              . All Rights Reserved
             </p>
           </Col>
         </Row>
