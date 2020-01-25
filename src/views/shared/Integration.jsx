@@ -5,27 +5,29 @@ import MoreInfoButton from "components/MoreInfoButton.jsx";
 const renderBubbles = () => {
   let bubbles = [];
   const items = [
-    {icon: "build_tools/maven", name: "Maven"},
-    {icon: "build_tools/sbt", name: "Sbt"},
-    {icon: "database/mariadb", name: "Mariadb"},
-    {icon: "database/mongodb", name: "Mongodb"},
-    {icon: "database/postgresql", name: "Postgres"},
-    {icon: "database/sqlite", name: "Sqlite"},
-    {icon: "data_stream/kinesis", name: "AmazonKinesis"},
-    {icon: "data_stream/kafka1", name: "Kafka"},
-    {icon: "deployment_automation/aws", name: "Amazon Web Services"},
-    {icon: "deployment_automation/docker", name: "Docker"},
-    {icon: "deployment_automation/jenkins", name: "jenkins"},
-    {icon: "deployment_automation/google-cloud", name: "Google Cloud"},
-    {icon: "hadoop/spark-5", name: "Apache Spark 5"},
-    {icon: "hadoop/mapreduce", name: "Mapreduce"},
-    {icon: "language/java", name: "Java"},
     {icon: "language/python", name: "Python"},
     {icon: "language/scala", name: "Scala"},
     {icon: "testing_framework/junit", name: "Junit"},
     {icon: "web-framework/django", name: "Django"},
-    // {icon: "web-framework/play", name: "play"}
-    // {icon: "web-framework/flask", name: "Flask"}
+    {icon: "build_tools/maven", name: "Maven"},
+    {icon: "web-framework/play", name: "play"},
+    {icon: "language/java", name: "Java"},
+    {icon: "web-framework/flask", name: "Flask"},
+    {icon: "build_tools/sbt", name: "Sbt"},
+    {icon: "deployment_automation/jenkins", name: "jenkins"},
+    {icon: "deployment_automation/google-cloud", name: "Google Cloud"},
+    {icon: "hadoop/spark-5", name: "Apache Spark 5"},
+    {icon: "hadoop/mapreduce", name: "Mapreduce"},
+    {icon: "database/sqlite", name: "Sqlite"},
+    {icon: "data_stream/kafka1", name: "Kafka"},
+    {icon: "deployment_automation/aws", name: "Amazon Web Services"},
+    {icon: "deployment_automation/docker", name: "Docker"},
+    {icon: "data_stream/kinesis", name: "AmazonKinesis"},
+    {icon: "database/mariadb", name: "Mariadb"},
+    {icon: "database/mongodb", name: "Mongodb"},
+    {icon: "database/postgresql", name: "Postgres"},
+
+
   ];
 
   items.forEach((bubble, i) => {
