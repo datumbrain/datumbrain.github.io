@@ -5,38 +5,103 @@
 $big-mockup-width: 920px;
 
 p {
-    margin: 1rem 0;
+  margin: 1rem 0;
 }
 
 .logo {
-    max-width: 180px;
+  max-width: 180px;
 }
 
 .swiper-container {
-    padding-top: 8px;
-    text-align: center;
-    .swiper-pagination-top {
-        bottom: auto;
-        top: 0;
-    }
+  padding-top: 8px;
+  text-align: center;
+  .swiper-pagination-top {
+    bottom: auto;
+    top: 0;
+  }
 }
 
 hr[class*='bg'] {
-    border-top: 0;
-    height: 1px;
+  border-top: 0;
+  height: 1px;
 }
 
 .off-left-background {
-    background-position: -60px 20px;
-    transform: translate3d(0, 0, 0);
-    transition: all .4s ease;
+  background-position: -60px 20px;
+  transform: translate3d(0, 0, 0);
+  transition: all .4s ease;
 
-    &:hover {
-        background-position: -60px 0px;
-        transform:translate3d(0, -10px, 0);
-    }
+  &:hover {
+    background-position: -60px 0px;
+    transform:translate3d(0, -10px, 0);
+  }
 }
 
 .nav-process {
-    min-height: 60px;
+  min-height: 60px;
+}
+
+
+.carousel-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  &__avatar {
+    //background-color: green;
+    display: flex;
+    margin-bottom: 20px;
+
+    img {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      overflow: hidden;
+    }
+  }
+
+
+  &__video {
+    width: 450px;
+    height: 270px;
+
+    //border: 20px solid #ffc952;
+    padding: 20px; // should be replaced with padding
+
+    video {
+      height: 100%;
+      width: 100%;
+
+    }
+  }
+}
+
+.control {
+  position: absolute;
+  background-color: green;
+  border-radius: 50%;
+  display: inline-flex;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.control-left {
+  left: -60px;
+}
+
+.control-right {
+  right: -60px;
+}
+
+.back-link:hover .icon{
+  //transition: all 150ms ease-in;
+    transform: translateX(-6px);
+}
+
+.mb-30 {
+  margin-bottom: 30px !important;
 }
