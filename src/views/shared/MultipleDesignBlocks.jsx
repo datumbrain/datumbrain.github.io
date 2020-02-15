@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {createRef, useEffect, useState} from "react";
 import classNames from "classnames/bind";
 import { Container, Row, Col } from "reactstrap";
 import MoreInfoButton from "components/MoreInfoButton";
@@ -60,7 +60,10 @@ function getCarouselItems() {
 
 
 const MultipleDesignBlocks = () => {
+
     let [currentCarouselItem, setCarouselItem] = useState(0);
+    let ref = createRef();
+ 
 
     return (
         <section id="portfolio" className="section powered-design">
@@ -109,10 +112,13 @@ const MultipleDesignBlocks = () => {
                             </p>
 
 
-                            <p className="lead text-muted mt-0">
+                            <p className="lead text-muted mt-0" ref={ref} style={{
+                                width: "60%",
+                                fontStyle: "italic"
+                            }}>
                             <span className="py-3 " style={{
                                 marginLeft: "-30px",
-                                transform: "translateY(30px)",
+                                transform: "translateY(40px)",
                                 display: "inline-block",
                                 opacity: .3
                             }}><FontAwesomeIcon icon={faQuoteLeft} /></span>
@@ -125,7 +131,6 @@ const MultipleDesignBlocks = () => {
 
                                 </p>
                                 <span className="d-flex justify-content-end" style={{
-                                    paddingRight: "40px",
                                     transform: "translateY(-20px)",
                                     opacity: .3
                                 }}><FontAwesomeIcon icon={faQuoteRight} /></span>
