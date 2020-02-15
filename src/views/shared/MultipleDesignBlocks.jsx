@@ -89,7 +89,7 @@ const MultipleDesignBlocks = () => {
                 <Row className="gap-y align-items-center">
                     <Col md="12">
                         <div className="section-heading mb-30">
-                            <h2 className="heading-line">Featured Work</h2>
+                            <h2 className="heading-line">What clients say</h2>
 
                             <div className="carousel-card__avatar">
                                 <img src={getCarouselItems()[currentCarouselItem].avatar || noUserImage} alt="user image"/>
