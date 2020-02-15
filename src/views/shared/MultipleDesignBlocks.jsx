@@ -7,14 +7,14 @@ import Fade from "react-reveal/Fade";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCoffee, faQuoteLeft, faQuoteRight, faLongArrowAltLeft } from '@fortawesome/free-solid-svg-icons';
 import {Link} from "react-router-dom";
-import firstVideo from "../../assets/img/carousel_video.mp4";
+// import firstVideo from "../../assets/img/carousel_video.mp4";
 
 
 import firstUser from "../../assets/img/Ayoub-Fakir-1.jpg";
 import secondUser from "../../assets/img/YasirAli.jpeg";
 import thirdUser from "../../assets/img/Eipen.jpeg";
-import secondVideo from "../../assets/img/second_video.mp4";
-import thirdVideo from "../../assets/img/third_video.mp4";
+// import secondVideo from "../../assets/img/second_video.mp4";
+// import thirdVideo from "../../assets/img/third_video.mp4";
 import noUserImage from "../../assets/img/user_3.png";
 
 const renderItems = () => {
@@ -46,10 +46,10 @@ const renderItems = () => {
 
 function getCarouselItems() {
     return [
-        {quote: "Fahad is a wonderful developer. He knew exactly how to manage and find the right solutions to our problem (which wasn't easy at all to manage) and proposed the appropriate options then succeeded in his work. I unreservedly recommend him! Keep up doing the that great work!", video: firstVideo, customerName: "Ayoub Fakir", links: [{text: "TEDx Speaker", link: "https://www.youtube.com/watch?v=-jm5Fw0F-ug"}, {text: "ScalaIO FR Speaker", link: "https://www.youtube.com/watch?v=IbLh8-8rsvo"} ], designation: "Solution Designer, ReportBrain", avatar: firstUser},
-        {quote: "Very knowledgeable, easy to work with, transparent about personal strengths and weaknesses, very sound on the subject matter, proposes alternative solutions where applicable, highly recommended team!", video: secondVideo, customerName: "Yasir Ali", designation: "Predict Data, Inc.", avatar: secondUser},
+        {quote: "Fahad is a wonderful developer. He knew exactly how to manage and find the right solutions to our problem (which wasn't easy at all to manage) and proposed the appropriate options then succeeded in his work. I unreservedly recommend him! Keep up doing the that great work!", customerName: "Ayoub Fakir", links: [{text: "TEDx Speaker", link: "https://www.youtube.com/watch?v=-jm5Fw0F-ug"}, {text: "ScalaIO FR Speaker", link: "https://www.youtube.com/watch?v=IbLh8-8rsvo"} ], designation: "Solution Designer, ReportBrain", avatar: firstUser},
+        {quote: "Very knowledgeable, easy to work with, transparent about personal strengths and weaknesses, very sound on the subject matter, proposes alternative solutions where applicable, highly recommended team!", customerName: "Yasir Ali", designation: "Predict Data, Inc.", avatar: secondUser},
 
-        {quote: "Amazing! Quick to understand our project. Able to recognize possible issues and resolve them quickly. Delivered on time every time. Also took on project management roles when we need and was able to better coordinate with other members of the team. For me and my team it was a wonderful experience working with them.", video: thirdVideo, customerName: "Eapen Kalathil", designation: "CEO, Parcelist", avatar: thirdUser},
+        {quote: "Amazing! Quick to understand our project. Able to recognize possible issues and resolve them quickly. Delivered on time every time. Also took on project management roles when we need and was able to better coordinate with other members of the team. For me and my team it was a wonderful experience working with them.", customerName: "Eapen Kalathil", designation: "CEO, Parcelist", avatar: thirdUser},
         {quote: "Honest and able to manage the project and identify the ideas and mechanisms that serve the outputs and are courteous and knows how to deal with the customer in a very professional way. They are smart, committed, and fully qualified young professionals in all their skills and expertise.", customerName: "Ibrahim Alfayoumi", designation: "Confidential"},
         {quote: "Fahad, is extremely talented and has excellent skills in Scala. He is very accommodating and prompt in response. He has great communication skills that helped the project immensely. I will highly recommend Fahad to anyone who is looking for hiring a professional Scala developer.", customerName: "Rameez Vora", designation: "Confidential" },
         {quote: "Excellent experience!", customerName: "Mohammad Wahid", designation: "CEO, Mecku"},
