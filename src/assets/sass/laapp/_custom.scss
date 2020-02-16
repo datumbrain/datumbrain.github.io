@@ -5,38 +5,200 @@
 $big-mockup-width: 920px;
 
 p {
-    margin: 1rem 0;
+  margin: 1rem 0;
 }
 
 .logo {
-    max-width: 180px;
+  max-width: 180px;
 }
 
 .swiper-container {
-    padding-top: 8px;
-    text-align: center;
-    .swiper-pagination-top {
-        bottom: auto;
-        top: 0;
-    }
+  padding-top: 8px;
+  text-align: center;
+  .swiper-pagination-top {
+    bottom: auto;
+    top: 0;
+  }
 }
 
 hr[class*='bg'] {
-    border-top: 0;
-    height: 1px;
+  border-top: 0;
+  height: 1px;
 }
 
 .off-left-background {
-    background-position: -60px 20px;
-    transform: translate3d(0, 0, 0);
-    transition: all .4s ease;
+  background-position: -60px 20px;
+  transform: translate3d(0, 0, 0);
+  transition: all .4s ease;
 
-    &:hover {
-        background-position: -60px 0px;
-        transform:translate3d(0, -10px, 0);
-    }
+  &:hover {
+    background-position: -60px 0px;
+    transform:translate3d(0, -10px, 0);
+  }
 }
 
 .nav-process {
-    min-height: 60px;
+  min-height: 60px;
+}
+
+
+.carousel-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  &__avatar {
+    //background-color: green;
+    display: flex;
+    margin-bottom: 20px;
+
+    img {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      overflow: hidden;
+    }
+  }
+
+
+  &__video {
+    width: 450px;
+    height: 270px;
+
+    //border: 20px solid #ffc952;
+    padding: 20px; // should be replaced with padding
+
+    video {
+      height: 100%;
+      width: 100%;
+
+    }
+  }
+}
+
+.control {
+  position: absolute;
+  background-color: green;
+  border-radius: 50%;
+  display: inline-flex;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.control-left {
+  left: -60px;
+}
+
+.control-right {
+  right: -60px;
+}
+
+.back-link:hover .icon{
+  //transition: all 150ms ease-in;
+    transform: translateX(-6px);
+}
+
+.mb-30 {
+  margin-bottom: 30px !important;
+}
+
+.custom-modal {
+  position: fixed;
+
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000d6;
+  z-index: 99999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+
+  &__video {
+    position: relative;
+
+    .cross-icon {
+      position: absolute;
+      right: -40px;
+      top: -40px;
+      cursor: pointer;
+
+      &:hover {
+        transition: all 150ms ease;
+        transform: scale(1.1);
+      }
+
+      svg {
+        width: 30px;
+        height: 30px;
+      }
+
+    }
+
+    iframe {
+      box-shadow: 0px 0px 14px black;
+    }
+  }
+}
+.screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  .play-icon {
+    position: absolute;
+    padding: 30px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover {
+
+      transform: scale(1.1);
+      transition: all 150ms ease;
+    }
+
+    svg {
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      left: 20px;
+    }
+
+    //&::before {
+    //  content: "";
+    //  padding: 9px;
+    //  position: absolute;
+    //  transform: rotate(45deg);
+    //  border-right: 5px solid #000000;
+    //  border-top: 5px solid #000000;
+    //  //border-radius: 5px;
+    //  top: 17px;
+    //  left: 14px;
+    //}
+    //
+    //&::after {
+    //  content: "";
+    //  padding: 9px;
+    //  position: absolute;
+    //  transform: rotate(45deg);
+    //  border-right: 5px solid #000000;
+    //  border-top: 5px solid #000000;
+    //  //border-radius: 5px;
+    //  top: 17px;
+    //  left: 14px;
+    //}
+  }
 }
