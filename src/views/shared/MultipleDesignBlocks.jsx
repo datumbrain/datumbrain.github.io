@@ -59,11 +59,52 @@ function getCarouselItems() {
 }
 
 
+
+
+
+
 const MultipleDesignBlocks = () => {
 
     let [currentCarouselItem, setCarouselItem] = useState(0);
     let ref = createRef();
- 
+
+    function respondBack() {
+        let elm = ref.current;
+
+        elm.style.opacity = 0;
+        elm.style.fontSize = 0;
+
+        setTimeout(() => {
+            setCarouselItem(currentCarouselItem === 0 ? getCarouselItems().length - 1 : currentCarouselItem - 1 );
+
+            requestAnimationFrame(() => {
+
+                elm.style.opacity = 1;
+                elm.style.fontSize = "";
+            })
+
+        }, 500);
+
+    }
+
+    function respondNext() {
+        let elm = ref.current;
+
+        elm.style.opacity = 0;
+        elm.style.fontSize = 0;
+
+
+        setTimeout(() => {
+            setCarouselItem(getCarouselItems().length - 1 === currentCarouselItem ? 0 : currentCarouselItem + 1)
+
+            requestAnimationFrame(() => {
+                elm.style.opacity = 1;
+                elm.style.fontSize = ""
+
+            })
+
+        }, 500)
+    }
 
     return (
         <section id="portfolio" className="section powered-design">
@@ -112,7 +153,7 @@ const MultipleDesignBlocks = () => {
                             </p>
 
 
-                            <p className="lead text-muted mt-0" ref={ref} style={{
+                            <p className="lead text-muted mt-0" style={{
                                 width: "60%",
                                 fontStyle: "italic"
                             }}>
@@ -124,12 +165,16 @@ const MultipleDesignBlocks = () => {
                             }}><FontAwesomeIcon icon={faQuoteLeft} /></span>
 
 
-                                <p>
+                                <p ref={ref} style={{
+                                    transition: "all 150ms ease",
+                                    overflow: "hidden",
+                                }}>
                                     {/*Our team has worked on some really awesome products and*/}
                                     {/*delivered exceptional solutions.*/}
-                                    {  getCarouselItems()[currentCarouselItem].quote  }
+                                    {getCarouselItems()[currentCarouselItem].quote}
 
                                 </p>
+
                                 <span className="d-flex justify-content-end" style={{
                                     transform: "translateY(-20px)",
                                     opacity: .3
@@ -138,7 +183,7 @@ const MultipleDesignBlocks = () => {
                         </div>
 
 
-                        <Link className={"back-link btn btn-outline-alternate more-link mt-0 mr-3"} onClick={() => setCarouselItem(currentCarouselItem === 0 ? getCarouselItems().length - 1 : currentCarouselItem - 1 )}>
+                        <Link className={"back-link btn btn-outline-alternate more-link mt-0 mr-3"} onClick={() => respondBack()}>
                             <FontAwesomeIcon
                                 icon={faLongArrowAltLeft}
                                 className="icon"
@@ -146,7 +191,7 @@ const MultipleDesignBlocks = () => {
                             Back
                         </Link>
 
-                        <MoreInfoButton onClick={() => setCarouselItem(getCarouselItems().length - 1 === currentCarouselItem ? 0 : currentCarouselItem + 1)}
+                        <MoreInfoButton onClick={() => respondNext()}
                                         className="btn btn-outline-alternate more-link mt-0"
                                         text="Next" />
 

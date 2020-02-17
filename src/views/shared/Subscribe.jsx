@@ -8,7 +8,7 @@ const Subscribe = () => {
       <Container className="bring-to-front">
         <div className="shadow rounded p-5 bg-contrast overflow-hidden">
           <div className="section-heading text-center">
-            <h2 className="heading-line">Connect With Us</h2>
+            <h2 className="heading-line">Connect with us</h2>
             <p className="lead text-alternate">
               Reach out to us with any query, we will get back to you almost
               immediately.
