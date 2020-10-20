@@ -17,7 +17,7 @@ const DefaultFooter = () => {
             />
 
             <p>
-              A Lahorebased technology start-up, pioneering in data analytics, data science {"&"} data engineering.
+              A Lahore based technology start-up, pioneering in data analytics, data science {"&"} data engineering.
             </p>
           </Col>
 
