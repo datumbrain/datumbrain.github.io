@@ -12,13 +12,13 @@ const renderFeatures = () => {
     },
     {
       icon: "pe-7s-tools",
-      title: "Machine Learning",
+      title: "Data Engineering",
       description:
         "Data never lies! Predict results to enable informed decision making. "
     },
     {
       icon: "pe-7s-light",
-      title: "Artificial Intelligence",
+      title: "Custom Software Development",
       description:
         "Experience AI in its true definition and utilize the maximum benefits of this wonderful technology."
     }
