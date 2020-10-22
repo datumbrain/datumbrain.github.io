@@ -17,7 +17,7 @@ section,
       padding-top: $section-container-padding-y / 4;
       padding-bottom: $section-container-padding-x / 4;
     }
-
+    
     @include media-breakpoint-down($grid-float-breakpoint-max) {
       overflow: hidden;
     }
