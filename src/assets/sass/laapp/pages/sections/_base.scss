@@ -14,8 +14,8 @@ section,
     }
 
     @include media-breakpoint-up($grid-float-breakpoint) {
-      padding-top: $section-container-padding-y;
-      padding-bottom: $section-container-padding-x;
+      padding-top: $section-container-padding-y / 4;
+      padding-bottom: $section-container-padding-x / 4;
     }
 
     @include media-breakpoint-down($grid-float-breakpoint-max) {
