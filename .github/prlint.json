@@ -1,0 +1,14 @@
+{
+  "title": [
+    {
+      "pattern": "^(\\[[\\s-]\\]): \\s",
+      "message": "Your title needs to be prefixed with a ticket (Trello card) ID."
+    }
+  ],
+  "head.ref": [
+    {
+      "pattern": "^(f|h|n)/",
+      "message": "Your branch name is invalid."
+    }
+  ]
+}
