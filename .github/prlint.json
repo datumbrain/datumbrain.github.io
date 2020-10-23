@@ -8,7 +8,7 @@
   "head.ref": [
     {
       "pattern": "^(f|h|n)/",
-      "message": "Your branch name is invalid."
+      "message": "Your branch name is invalid. "
     }
   ]
 }
