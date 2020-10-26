@@ -8,17 +8,17 @@ const renderFeatures = () => {
     {
       name: "Scalable",
       icon: "plug",
-      description: "Scale your solution with absolutely no hassle"
+      description: "You can, anytime, scale up your solution without changing any code"
     },
     {
       name: "Custom Analytics",
       icon: "heart",
-      description: "Get the stats that matter to you most"
+      description: "Get the stats that matter to your business, the most"
     },
     {
       name: "Cloud Deployment",
       icon: "headphones",
-      description: "Deploy on secure and fast cloud servers"
+      description: "Trigger-based deployments"
     }
   ];
 
@@ -57,14 +57,11 @@ const WhyUs = () => {
         <div className="section-heading text-center">
           <h2 className="heading-line">Why choose Datum Brain?</h2>
           <p className="text-muted lead mx-auto">
-            Years of experience in technologies like Scala and Play Framework,
-            enable us to provide solutions to problems that are considered too
-            complex to solve by others.{" "}
+            Years of experience in Scala and Golang, enable us to provide cutting-edge solutions.{" "}
           </p>
           <p className="text-muted lead mx-auto">
-            No matter how unique your requirements may be, we can work on
-            extracting the ideal solution and deliver it in a robust and
-            extremely user friendly way. You are surely in for a surprise!
+            We can work on extracting the ideal solution and deliver it in a robust and extremely user-friendly way.
+            You are surely in for a surprise!
           </p>
         </div>
 

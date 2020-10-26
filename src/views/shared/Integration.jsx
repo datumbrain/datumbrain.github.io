@@ -68,7 +68,7 @@ const Integration = () => {
                 <p className="text-alternate text-uppercase bold">
                   Latest Stacks
                 </p>
-                <h2 className="heading-line">Solutions tailored for you</h2>
+                <h2 className="heading-line">Tech-stacks</h2>
                 <p className="lead text-muted">
                   Our extensive research and development along with hands on expereince on the latests
                   innovations grants you a solution that is perfectly fit for your
