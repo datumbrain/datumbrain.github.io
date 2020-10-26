@@ -63,9 +63,6 @@ const Integration = () => {
 
           <Col md='6'>
             <div className='section-heading'>
-              <p className='text-alternate text-uppercase bold'>
-                Latest Stacks
-              </p>
               <h2 className='heading-line'>Tech-Stack</h2>
               <p className='lead text-muted'>
                 Our extensive research and development along with hands on
