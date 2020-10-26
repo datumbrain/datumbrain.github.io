@@ -46,7 +46,7 @@ const Features = () => {
           <p className="lead text-muted">
             Datum Brain is a cutting edge endeavor that specifically caters to
             the latest technologies. We have centered our skills and done
-            extensive work in the following three disciplines:
+            extensive work in the following three disciplines
           </p>
         </div>
 
