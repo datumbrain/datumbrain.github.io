@@ -8,19 +8,19 @@ const renderFeatures = () => {
       icon: "pe-7s-diamond",
       title: "Big Data",
       description:
-        "Over 17+ Businesses empowered using the latest Big Data technologies. "
+        "We empowered 17+ businesses by thoroughly studying their data and how they stored it."
     },
     {
       icon: "pe-7s-tools",
-      title: "Machine Learning",
+      title: "Data Engineering",
       description:
-        "Data never lies! Predict results to enable informed decision making. "
+        "Our constantly evolving spectrum of tools and technologies and super-ETLs gives us the edge over others in the field of data engineering."
     },
     {
       icon: "pe-7s-light",
-      title: "Artificial Intelligence",
+      title: "Custom Software Development",
       description:
-        "Experience AI in its true definition and utilize the maximum benefits of this wonderful technology."
+        "The tailor-made solutions specific to your needs—is our focus."
     }
   ];
 
