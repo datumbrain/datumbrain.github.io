@@ -21,7 +21,11 @@ p {
   }
 }
 
-hr[class*='bg'] {
+html {
+  scroll-behavior: smooth;
+}
+
+hr[class*="bg"] {
   border-top: 0;
   height: 1px;
 }
@@ -29,18 +33,17 @@ hr[class*='bg'] {
 .off-left-background {
   background-position: -60px 20px;
   transform: translate3d(0, 0, 0);
-  transition: all .4s ease;
+  transition: all 0.4s ease;
 
   &:hover {
     background-position: -60px 0px;
-    transform:translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
   }
 }
 
 .nav-process {
   min-height: 60px;
 }
-
 
 .carousel-card {
   display: flex;
@@ -60,7 +63,6 @@ hr[class*='bg'] {
     }
   }
 
-
   &__video {
     width: 450px;
     height: 270px;
@@ -71,7 +73,6 @@ hr[class*='bg'] {
     video {
       height: 100%;
       width: 100%;
-
     }
   }
 }
@@ -87,8 +88,6 @@ hr[class*='bg'] {
   align-items: center;
 }
 
-
-
 .control-left {
   left: -60px;
 }
@@ -97,9 +96,9 @@ hr[class*='bg'] {
   right: -60px;
 }
 
-.back-link:hover .icon{
+.back-link:hover .icon {
   //transition: all 150ms ease-in;
-    transform: translateX(-6px);
+  transform: translateX(-6px);
 }
 
 .mb-30 {
@@ -108,7 +107,6 @@ hr[class*='bg'] {
 
 .custom-modal {
   position: fixed;
-
 
   top: 0;
   left: 0;
@@ -139,7 +137,6 @@ hr[class*='bg'] {
         width: 30px;
         height: 30px;
       }
-
     }
 
     iframe {
@@ -151,7 +148,6 @@ hr[class*='bg'] {
   display: flex;
   justify-content: center;
   align-items: center;
-
 
   .play-icon {
     position: absolute;
@@ -165,7 +161,6 @@ hr[class*='bg'] {
     cursor: pointer;
 
     &:hover {
-
       transform: scale(1.1);
       transition: all 150ms ease;
     }
