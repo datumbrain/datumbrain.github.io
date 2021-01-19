@@ -85,7 +85,18 @@ const Heading = () => {
                 icon={["far", "lightbulb"]}
                 className="text-primary mr-2"
               />
-              <span className="text-primary">Analytics</span> you can trust!
+              <span className="text-primary">Innovative&nbsp;</span>
+              <FontAwesomeIcon
+                icon={["far", "hammer"]}
+                className="text-primary-go mr-2"
+              />
+              <span className="text-primary-go">Build&nbsp;</span>
+
+              <FontAwesomeIcon
+                icon={["far", "redo-alt"]}
+                className="text-primary-scala mr-2"
+              />
+              <span className="text-primary-scala">Repeat&nbsp;</span>
             </span>
 
             <h3 className="display-4 mt-3">
