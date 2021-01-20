@@ -3,6 +3,11 @@ import { Container, Row, Col } from "reactstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Fade from "react-reveal/Fade";
 
+import {
+  faLightbulb,
+  faHammer,
+  faRedoAlt,
+} from "@fortawesome/free-solid-svg-icons";
 import { faTimes, faPlay } from "@fortawesome/free-solid-svg-icons";
 const shapes = [
   { duration: 1500, delay: 100 },
@@ -85,18 +90,18 @@ const Heading = () => {
                 icon={["far", "lightbulb"]}
                 className="text-primary mr-2"
               />
-              <span className="text-primary">Innovative&nbsp;</span>
+              <span className="text-primary mr-2">Innovative</span>
               <FontAwesomeIcon
-                icon={["far", "hammer"]}
+                icon={faHammer}
                 className="text-primary-go mr-2"
               />
-              <span className="text-primary-go">Build&nbsp;</span>
+              <span className="text-primary-go mr-2">Build</span>
 
               <FontAwesomeIcon
-                icon={["far", "redo-alt"]}
+                icon={faRedoAlt}
                 className="text-primary-scala mr-2"
               />
-              <span className="text-primary-scala">Repeat&nbsp;</span>
+              <span className="text-primary-scala mr-2">Repeat</span>
             </span>
 
             <h3 className="display-4 mt-3">

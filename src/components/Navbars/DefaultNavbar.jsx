@@ -114,16 +114,16 @@ class DefaultNavbar extends React.Component {
                 <NavLink href="#contact">contact</NavLink>
               </NavItem>
               <NavItem className="d-flex align-items-center">
-                <img
-                  src={require("../../assets/img/blog-icon.png")}
-                  style={{
-                    height: "16px",
-                    transform: "translateX(10px)",
-                  }}
-                  alt=""
-                />
                 <NavLink href="http://blog.datumbrain.com" target="_blank">
-                  Blog
+                  <img
+                    src={require("../../assets/img/blog-icon.png")}
+                    style={{
+                      height: "1rem",
+                      marginRight: ".5rem",
+                    }}
+                    alt=""
+                  />
+                  blog
                 </NavLink>
               </NavItem>
               <NavItem className="d-flex align-items-center">
