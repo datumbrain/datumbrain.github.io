@@ -93,13 +93,17 @@ const Heading = () => {
                 icon={["far", "lightbulb"]}
                 className="text-primary mr-2"
               />
-              <span className="text-primary mr-2">Innovate</span>
+              <span className="text-primary mr-2">
+                Innovate <span style={{ color: "#cccccc" }}>&middot;</span>
+              </span>
               <FontAwesomeIcon
                 icon={faHammer}
                 className="text-primary-go"
                 style={{ marginRight: "7px" }}
               />
-              <span className="text-primary-go mr-2">Build</span>
+              <span className="text-primary-go mr-2">
+                Build <span style={{ color: "#cccccc" }}>&middot;</span>
+              </span>
 
               <FontAwesomeIcon
                 icon={faRedoAlt}
@@ -112,7 +116,7 @@ const Heading = () => {
               <span className="bold">Datum Brain</span>
             </h3>
             <p className="lead bold text-primary">
-              Data Engineering / Big Data / Data Science
+              Data Engineering / Big Data / Web Apps
             </p>
 
             <p className="lead">

@@ -20,7 +20,7 @@ import thirdUser from "../../assets/img/alexander_k.jpg";
 import fourthUser from "../../assets/img/ibrahim.jpg";
 // import secondVideo from "../../assets/img/second_video.mp4";
 // import thirdVideo from "../../assets/img/third_video.mp4";
-import noUserImage from "../../assets/img/user_3.png";
+import noUserImage from "../../assets/img/user_3.jpg";
 
 const renderItems = () => {
   let items = [];
@@ -87,19 +87,7 @@ function getCarouselItems() {
       customerName: "Ron Vincelet",
       designation: "funcrane.com, neoprintr.com",
     },
-    {
-      quote:
-        "Great job. Actually he is an over-performer! Hard-worker and puts in the hours needed to complete the job undertaken successfully",
-      customerName: "Alexander Kostopoulos",
-      designation: "ReportBrain",
-      avatar: thirdUser,
-    },
-    {
-      quote:
-        "Excellent cooperation and we look forward to working again with Fahad!",
-      customerName: "Alexander Kostopoulos",
-      avatar: thirdUser,
-    },
+
     {
       quote:
         "Fahad Siddiqui, is an honest man who is able to manage the project and identify the ideas and mechanisms that serve the outputs as he is courteous and knows how to deal with the customer in a very professional way. He is a smart, committed, and fully qualified young man in all his skills and expertise.",
