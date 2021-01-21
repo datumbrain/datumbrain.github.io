@@ -8,7 +8,7 @@ const Footer = () => {
       <Container className="pb-3">
         <Row className="gap-y text-center text-md-left">
           <Col md="6" lg="4" className="mr-auto">
-            <img src={require("assets/img/logo.png")} alt="" className="logo" />
+            <img src={require("assets/img/logo.svg")} alt="" className="logo" />
 
             <p className="lead">
               <span className="bold">Laapp</span>, a premium yet ease to

@@ -43,18 +43,18 @@ const Heading = () => {
 
         {/* animated shapes */}
         {/* <div className="animation-shape shape-ring animation--clockwise" />
-          <div className="animation-shape shape-circle shape-circle-1 animation--anti-clockwise" />
-          <div className="animation-shape shape-circle shape-circle-2 animation--clockwise" />
-          <div className="animation-shape shape-heart animation--clockwise">
-            <div className="animation--rotating" />
-          </div>
+        <div className="animation-shape shape-circle shape-circle-1 animation--anti-clockwise" />
+        <div className="animation-shape shape-circle shape-circle-2 animation--clockwise" />
+        <div className="animation-shape shape-heart animation--clockwise">
+          <div className="animation--rotating" />
+        </div> */}
 
-          <div className="animation-shape shape-triangle animation--rotating-diagonal">
-            <div className="animation--rotating" />
-          </div>
-          <div className="animation-shape shape-diamond animation--anti-clockwise">
-            <div className="animation--rotating" />
-          </div> */}
+        <div className="animation-shape shape-triangle animation--rotating-diagonal">
+          <div className="animation--rotating" />
+        </div>
+        <div className="animation-shape shape-diamond animation--anti-clockwise">
+          <div className="animation--rotating" />
+        </div>
 
         {/* static shapes */}
         <div className="static-shape shape-ring-1" />
@@ -85,15 +85,19 @@ const Heading = () => {
       <Container>
         <Row>
           <Col md="6">
-            <span className="rounded-pill shadow-box bg-contrast text-dark bold py-2 px-4">
+            <span
+              className="rounded-pill shadow-box bg-contrast text-dark bold py-2 px-4"
+              // style={{ textTransform: "uppercase" }}
+            >
               <FontAwesomeIcon
                 icon={["far", "lightbulb"]}
                 className="text-primary mr-2"
               />
-              <span className="text-primary mr-2">Innovative</span>
+              <span className="text-primary mr-2">Innovate</span>
               <FontAwesomeIcon
                 icon={faHammer}
-                className="text-primary-go mr-2"
+                className="text-primary-go"
+                style={{ marginRight: "7px" }}
               />
               <span className="text-primary-go mr-2">Build</span>
 
