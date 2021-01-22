@@ -94,7 +94,7 @@ const Heading = () => {
                 className="text-primary mr-2"
               />
               <span className="text-primary mr-2">
-                Innovate <span style={{ color: "#cccccc" }}>&middot;</span>
+                Innovate <span style={{ color: "#eee" }}>&middot;</span>
               </span>
               <FontAwesomeIcon
                 icon={faHammer}
@@ -102,7 +102,7 @@ const Heading = () => {
                 style={{ marginRight: "7px" }}
               />
               <span className="text-primary-go mr-2">
-                Build <span style={{ color: "#cccccc" }}>&middot;</span>
+                Build <span style={{ color: "#eee" }}>&middot;</span>
               </span>
 
               <FontAwesomeIcon

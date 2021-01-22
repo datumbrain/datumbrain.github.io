@@ -18,6 +18,8 @@ import firstUser from "../../assets/img/skylerReeves.jpg";
 import secondUser from "../../assets/img/Eipen.jpeg";
 import thirdUser from "../../assets/img/alexander_k.jpg";
 import fourthUser from "../../assets/img/ibrahim.jpg";
+import fifthUser from "../../assets/img/shmuel.png";
+import sixthUser from "../../assets/img/fotios.png";
 // import secondVideo from "../../assets/img/second_video.mp4";
 // import thirdVideo from "../../assets/img/third_video.mp4";
 import noUserImage from "../../assets/img/user_3.jpg";
@@ -72,6 +74,7 @@ function getCarouselItems() {
         "500% professional. Did a miracle, in no time. Job was done with attention to detail and quality, while being in constant communication with me, with very fast replies and doing changes according to my instructions. Delivered results in no time. I am personally fully impressed and will choose him BLINDLY for any similar projects of mine that can be covered by his expertise.",
       customerName: "Fotios Kitsantas",
       designation: "Beasts Unleashed",
+      avatar: sixthUser,
     },
     {
       quote:
@@ -99,6 +102,7 @@ function getCarouselItems() {
       quote: "Super person to work with — diligent and strong programmer.",
       customerName: "Shmuel Cohen",
       designation: "PSI Services",
+      avatar: fifthUser,
     },
   ];
 }
