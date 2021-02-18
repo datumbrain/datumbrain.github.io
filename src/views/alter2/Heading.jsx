@@ -1,14 +1,14 @@
-import React, { useState } from "react";
-import { Container, Row, Col } from "reactstrap";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Fade from "react-reveal/Fade";
+import React, { useState } from 'react';
+import { Container, Row, Col } from 'reactstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import Fade from 'react-reveal/Fade';
 
 import {
   faLightbulb,
   faHammer,
   faRedoAlt,
-} from "@fortawesome/free-solid-svg-icons";
-import { faTimes, faPlay } from "@fortawesome/free-solid-svg-icons";
+} from '@fortawesome/free-solid-svg-icons';
+import { faTimes, faPlay } from '@fortawesome/free-solid-svg-icons';
 const shapes = [
   { duration: 1500, delay: 100 },
   { duration: 1000, delay: 100 },
@@ -28,13 +28,13 @@ const Heading = () => {
   let [popupStatus, setPopupStatus] = useState(false);
 
   return (
-    <header id="home" className="header alter2-header section">
-      <div className="shapes-container">
+    <header id='home' className='header alter2-header section'>
+      <div className='shapes-container'>
         {/* diagonal shapes */}
         {shapes.map((shape, i) => (
           <Fade bottom>
             <div
-              className="shape shape-animated shape-diagonal"
+              className='shape shape-animated shape-diagonal'
               duration={shape.duration}
               delay={shape.delay}
             />
@@ -49,133 +49,133 @@ const Heading = () => {
           <div className="animation--rotating" />
         </div> */}
 
-        <div className="animation-shape shape-triangle animation--rotating-diagonal">
-          <div className="animation--rotating" />
+        <div className='animation-shape shape-triangle animation--rotating-diagonal'>
+          <div className='animation--rotating' />
         </div>
-        <div className="animation-shape shape-diamond animation--anti-clockwise">
-          <div className="animation--rotating" />
+        <div className='animation-shape shape-diamond animation--anti-clockwise'>
+          <div className='animation--rotating' />
         </div>
 
         {/* static shapes */}
-        <div className="static-shape shape-ring-1" />
-        <div className="static-shape shape-ring-2" />
+        <div className='static-shape shape-ring-1' />
+        <div className='static-shape shape-ring-2' />
 
-        <div className="static-shape shape-circle shape-circle-1">
+        <div className='static-shape shape-circle shape-circle-1'>
           <Fade top right>
             <div />
           </Fade>
         </div>
 
-        <div className="static-shape shape-circle shape-circle-2">
+        <div className='static-shape shape-circle shape-circle-2'>
           <Fade top right delay={500}>
             <div />
           </Fade>
         </div>
 
-        <div className="static-shape pattern-dots-1" />
-        <div className="static-shape pattern-dots-2" />
+        <div className='static-shape pattern-dots-1' />
+        <div className='static-shape pattern-dots-2' />
 
         {/*  main shape */}
-        <div className="static-shape background-shape-main" />
+        <div className='static-shape background-shape-main' />
 
         {/*  ghost shapes */}
-        <div className="static-shape ghost-shape ghost-shape-1" />
+        <div className='static-shape ghost-shape ghost-shape-1' />
       </div>
 
       <Container>
         <Row>
-          <Col md="6">
+          <Col md='6'>
             <span
-              className="rounded-pill shadow-box bg-contrast text-dark bold py-2 px-4"
+              className='rounded-pill shadow-box bg-contrast text-dark bold py-2 px-4'
               // style={{ textTransform: "uppercase" }}
             >
               <FontAwesomeIcon
-                icon={["far", "lightbulb"]}
-                className="text-primary mr-2"
+                icon={['far', 'lightbulb']}
+                className='text-primary mr-2'
               />
-              <span className="text-primary mr-2">
-                Innovate <span style={{ color: "#eee" }}>&middot;</span>
+              <span className='text-primary mr-2'>
+                Innovate <span style={{ color: '#eee' }}>&middot;</span>
               </span>
               <FontAwesomeIcon
                 icon={faHammer}
-                className="text-primary-go"
-                style={{ marginRight: "7px" }}
+                className='text-primary-go'
+                style={{ marginRight: '7px' }}
               />
-              <span className="text-primary-go mr-2">
-                Build <span style={{ color: "#eee" }}>&middot;</span>
+              <span className='text-primary-go mr-2'>
+                Build <span style={{ color: '#eee' }}>&middot;</span>
               </span>
 
               <FontAwesomeIcon
                 icon={faRedoAlt}
-                className="text-primary-scala mr-2"
+                className='text-primary-scala mr-2'
               />
-              <span className="text-primary-scala mr-2">Repeat</span>
+              <span className='text-primary-scala mr-2'>Repeat</span>
             </span>
 
-            <h3 className="display-4 mt-3">
-              <span className="bold">Datum Brain</span>
+            <h3 className='display-4 mt-3'>
+              <span className='bold'>Datum Brain</span>
             </h3>
-            <p className="lead bold text-primary">
+            <p className='lead bold text-primary'>
               Data Engineering / Big Data / Web Apps
             </p>
 
-            <p className="lead">
-              We have specialized in most widely used {"&"} horizontally
+            <p className='lead'>
+              We have specialized in most widely used {'&'} horizontally
               scalable frameworks.
             </p>
 
-            <nav className="nav my-3">
+            <nav className='nav my-3'>
               <a
-                href="#features"
-                className="btn btn-rounded btn-alternate mr-5 mr-md-5"
+                href='#about'
+                className='btn btn-rounded btn-alternate mr-5 mr-md-5'
               >
                 About Us
                 <FontAwesomeIcon
-                  icon={["fas", "long-arrow-alt-right"]}
-                  className="ml-2"
+                  icon={['fas', 'long-arrow-alt-right']}
+                  className='ml-2'
                 />
               </a>
             </nav>
           </Col>
 
-          <Col md="6">
+          <Col md='6'>
             {/* <div className="iphone front mx-auto"> */}
-            <div className="browser absolute shadow lg">
-              <div className="screen shadow-box">
+            <div className='browser absolute shadow lg'>
+              <div className='screen shadow-box'>
                 <img
                   style={{ opacity: 0.9 }} // if you need to change opacity later
-                  src={require("assets/img/screens/app/shot-neo4j.png")}
-                  alt="..."
+                  src={require('assets/img/screens/app/shot-neo4j.png')}
+                  alt='...'
                 />
 
                 <div
-                  className="play-icon"
+                  className='play-icon'
                   onClick={() => setPopupStatus(!popupStatus)}
                 >
-                  <FontAwesomeIcon icon={faPlay} color="#6c757d" />
+                  <FontAwesomeIcon icon={faPlay} color='#6c757d' />
                 </div>
               </div>
-              <div className="notch" />
+              <div className='notch' />
             </div>
           </Col>
         </Row>
       </Container>
 
-      <div className={`custom-modal ${popupStatus ? "d-flex" : "d-none"}`}>
-        <div className="custom-modal__video">
+      <div className={`custom-modal ${popupStatus ? 'd-flex' : 'd-none'}`}>
+        <div className='custom-modal__video'>
           <span
-            className="cross-icon"
+            className='cross-icon'
             onClick={() => setPopupStatus(!popupStatus)}
           >
-            <FontAwesomeIcon icon={faTimes} color="white" />
+            <FontAwesomeIcon icon={faTimes} color='white' />
           </span>
           {popupStatus && (
             <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/Sbcx2dLcXkM"
-              frameBorder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              width='560'
+              height='315'
+              src='https://www.youtube.com/embed/Sbcx2dLcXkM'
+              frameBorder='0'
+              allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
               allowFullScreen
             />
           )}

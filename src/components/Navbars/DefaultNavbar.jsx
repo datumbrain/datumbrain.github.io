@@ -1,9 +1,9 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import classNames from "classnames/bind";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import classNames from 'classnames/bind';
 
 // reactstrap components
-import { NavbarBrand, NavItem, NavLink, Nav, Container } from "reactstrap";
+import { NavbarBrand, NavItem, NavLink, Nav, Container } from 'reactstrap';
 
 class DefaultNavbar extends React.Component {
   constructor(props) {
@@ -25,11 +25,11 @@ class DefaultNavbar extends React.Component {
   }
 
   componentDidMount() {
-    window.addEventListener("scroll", this.handleScroll);
+    window.addEventListener('scroll', this.handleScroll);
   }
 
   componentWillUnmount() {
-    window.removeEventListener("scroll", this.handleScroll);
+    window.removeEventListener('scroll', this.handleScroll);
   }
 
   handleScroll = () => {
@@ -37,9 +37,9 @@ class DefaultNavbar extends React.Component {
     const navTop = navigation.offsetTop + navigation.offsetHeight;
 
     if (window.scrollY >= navTop) {
-      navigation.classList.add("navbar-sticky");
+      navigation.classList.add('navbar-sticky');
     } else {
-      navigation.classList.remove("navbar-sticky");
+      navigation.classList.remove('navbar-sticky');
     }
   };
 
@@ -50,86 +50,86 @@ class DefaultNavbar extends React.Component {
       <nav
         ref={this.navbar}
         className={classNames(
-          "navbar navbar-expand-md main-nav navigation fixed-top sidebar-left",
-          { "navbar-expanded": this.state.navbarExpanded }
+          'navbar navbar-expand-md main-nav navigation fixed-top sidebar-left',
+          { 'navbar-expanded': this.state.navbarExpanded }
         )}
       >
         <Container>
           <button
-            className="navbar-toggler"
-            type="button"
+            className='navbar-toggler'
+            type='button'
             onClick={this.toggleNavbar}
           >
-            <span className="icon-bar" />
-            <span className="icon-bar" />
-            <span className="icon-bar" />
+            <span className='icon-bar' />
+            <span className='icon-bar' />
+            <span className='icon-bar' />
           </button>
 
-          <NavbarBrand className="mr-lg-5" to="/" tag={Link}>
+          <NavbarBrand className='mr-lg-5' to='/' tag={Link}>
             {useOnlyDarkLogo ? (
               <img
-                alt="..."
-                src={require("assets/img/logo.svg")}
-                className="logo logo-sticky"
+                alt='...'
+                src={require('assets/img/logo.svg')}
+                className='logo logo-sticky'
               />
             ) : (
               <>
                 <img
-                  src={require("assets/img/logo.svg")}
-                  alt="Laapp"
-                  className="logo logo-sticky d-block d-md-none"
+                  src={require('assets/img/logo.svg')}
+                  alt='Laapp'
+                  className='logo logo-sticky d-block d-md-none'
                 />
                 <img
-                  src={require("assets/img/logo-light.png")}
-                  alt="Laapp"
-                  className="logo d-none d-md-block"
+                  src={require('assets/img/logo-light.png')}
+                  alt='Laapp'
+                  className='logo d-none d-md-block'
                 />
               </>
             )}
           </NavbarBrand>
 
-          <div className="collapse navbar-collapse">
-            <div className="sidebar-brand">
-              <Link to="/">
+          <div className='collapse navbar-collapse'>
+            <div className='sidebar-brand'>
+              <Link to='/'>
                 <img
-                  src={require("assets/img/logo.svg")}
-                  alt="Laapp Template"
-                  className="logo"
+                  src={require('assets/img/logo.svg')}
+                  alt='Laapp Template'
+                  className='logo'
                 />
               </Link>
             </div>
 
-            <Nav className="nav navbar-nav ml-auto" navbar>
+            <Nav className='nav navbar-nav ml-auto' navbar>
               <NavItem>
-                <NavLink href="#home">home</NavLink>
+                <NavLink href='#home'>home</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#features">about</NavLink>
+                <NavLink href='#about'>about</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#portfolio">portfolio</NavLink>
+                <NavLink href='#portfolio'>portfolio</NavLink>
               </NavItem>
 
               <NavItem>
-                <NavLink href="#contact">contact</NavLink>
+                <NavLink href='#contact'>contact</NavLink>
               </NavItem>
-              <NavItem className="d-flex align-items-center">
-                <NavLink href="http://blog.datumbrain.com" target="_blank">
+              <NavItem className='d-flex align-items-center'>
+                <NavLink href='http://blog.datumbrain.com' target='_blank'>
                   blog
                 </NavLink>
               </NavItem>
-              <NavItem className="d-flex align-items-center">
+              <NavItem className='d-flex align-items-center'>
                 <img
-                  src={require("../../assets/img/upwork_icon.png")}
+                  src={require('../../assets/img/upwork_icon.png')}
                   style={{
-                    height: "30px",
-                    transform: "translateX(10px)",
+                    height: '30px',
+                    transform: 'translateX(10px)',
                   }}
-                  alt=""
+                  alt=''
                 />
                 <NavLink
-                  target={"blank"}
-                  href="https://www.upwork.com/ag/datumbrain/"
+                  target={'blank'}
+                  href='https://www.upwork.com/ag/datumbrain/'
                   style={{}}
                 >
                   Upwork
