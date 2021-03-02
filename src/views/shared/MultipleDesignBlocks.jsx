@@ -59,14 +59,8 @@ function getCarouselItems() {
       quote:
         "The team at Datum Brain was excellent to work with. They communicated clearly, understood my requirements, stayed within the budget for our project, and were extremely professional. I'd highly recommend them to anyone needing custom development work done.",
       customerName: 'Skyler Reeves',
-      links: [
-        {
-          text: 'Testimonial',
-          link: 'https://www.youtube.com/watch?v=oQ-hwitAJ2w',
-        },
-      ],
+      testimonialLink: 'https://www.youtube.com/embed/oQ-hwitAJ2w',
       designation: 'Ardent Growth',
-
       avatar: skyler,
     },
     {
@@ -208,49 +202,73 @@ const MultipleDesignBlocks = () => {
           <Col md='12'>
             <div className='section-heading mb-30'>
               <h2 className='heading-line'>What clients say</h2>
+              <div className='d-flex justify-content-between'>
+                <Col md='6' className='clients-info'>
+                  <div className='carousel-card__avatar'>
+                    <img
+                      src={
+                        getCarouselItems()[currentCarouselItem].avatar ||
+                        noUserImage
+                      }
+                      alt='user image'
+                    />
+                  </div>
 
-              <div className='carousel-card__avatar'>
-                <img
-                  src={
-                    getCarouselItems()[currentCarouselItem].avatar ||
-                    noUserImage
-                  }
-                  alt='user image'
-                />
+                  <h5
+                    className='bold mb-0'
+                    style={{
+                      fontSize: '18px',
+                    }}
+                  >
+                    {getCarouselItems()[currentCarouselItem].customerName}{' '}
+                    {getCarouselItems()[currentCarouselItem].links &&
+                      getCarouselItems()[currentCarouselItem].links.map(
+                        (item, index, links) => (
+                          <a
+                            href={item.link}
+                            target={'blank'}
+                            style={{
+                              fontSize: 13,
+                            }}
+                          >
+                            {item.text}
+                            {links.length - 1 === index ? ' ' : ' | '}
+                          </a>
+                        )
+                      )}
+                  </h5>
+
+                  <p
+                    className='my-0'
+                    style={{
+                      fontSize: '14px',
+                    }}
+                  >
+                    {getCarouselItems()[currentCarouselItem].designation}
+                  </p>
+                </Col>
+                {getCarouselItems()[currentCarouselItem].testimonialLink && (
+                  <Col md='4' className='client-testimonial'>
+                    <div className='browser absolute shadow lg'>
+                      <div className='screen shadow-box'>
+                        <img
+                          style={{ opacity: 0.9 }} // if you need to change opacity later
+                          src={require('assets/img/screens/app/skyler-testimonial.jpg')}
+                          alt='...'
+                        />
+
+                        <div
+                          className='play-icon'
+                          onClick={() => setPopupStatus(!popupStatus)}
+                        >
+                          <FontAwesomeIcon icon={faPlay} color='#6c757d' />
+                        </div>
+                      </div>
+                      <div className='notch' />
+                    </div>
+                  </Col>
+                )}
               </div>
-
-              <h5
-                className='bold mb-0'
-                style={{
-                  fontSize: '18px',
-                }}
-              >
-                {getCarouselItems()[currentCarouselItem].customerName}{' '}
-                {getCarouselItems()[currentCarouselItem].links &&
-                  getCarouselItems()[currentCarouselItem].links.map(
-                    (item, index, links) => (
-                      <a
-                        href={item.link}
-                        target={'blank'}
-                        style={{
-                          fontSize: 13,
-                        }}
-                      >
-                        {item.text}
-                        {links.length - 1 === index ? ' ' : ' | '}
-                      </a>
-                    )
-                  )}
-              </h5>
-              <p
-                className='my-0'
-                style={{
-                  fontSize: '14px',
-                }}
-              >
-                {getCarouselItems()[currentCarouselItem].designation}
-              </p>
-
               <p
                 className='lead text-muted mt-0'
                 style={{
@@ -347,6 +365,26 @@ const MultipleDesignBlocks = () => {
           {/*</Col>*/}
         </Row>
       </Container>
+      <div className={`custom-modal ${popupStatus ? 'd-flex' : 'd-none'}`}>
+        <div className='custom-modal__video'>
+          <span
+            className='cross-icon'
+            onClick={() => setPopupStatus(!popupStatus)}
+          >
+            <FontAwesomeIcon icon={faTimes} color='white' />
+          </span>
+          {popupStatus && (
+            <iframe
+              width='560'
+              height='315'
+              src={getCarouselItems()[currentCarouselItem].testimonialLink}
+              frameborder='0'
+              allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+              allowfullscreen
+            ></iframe>
+          )}
+        </div>
+      </div>
     </section>
   );
 };
