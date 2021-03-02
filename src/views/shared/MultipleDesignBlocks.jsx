@@ -11,6 +11,7 @@ import {
   faQuoteRight,
   faLongArrowAltLeft,
 } from '@fortawesome/free-solid-svg-icons';
+import { faTimes, faPlay } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 // import firstVideo from "../../assets/img/carousel_video.mp4";
 
@@ -58,6 +59,12 @@ function getCarouselItems() {
       quote:
         "The team at Datum Brain was excellent to work with. They communicated clearly, understood my requirements, stayed within the budget for our project, and were extremely professional. I'd highly recommend them to anyone needing custom development work done.",
       customerName: 'Skyler Reeves',
+      links: [
+        {
+          text: 'Testimonial',
+          link: 'https://www.youtube.com/watch?v=oQ-hwitAJ2w',
+        },
+      ],
       designation: 'Ardent Growth',
 
       avatar: skyler,
@@ -79,9 +86,19 @@ function getCarouselItems() {
 
     {
       quote:
-        'Fahad was amazing. He was quick to understand our project. He was able to recognize possible issues and resolve them quickly. He delivered on time every time. He also took on project management roles when needed and was able to better coordinate with other members of the team. For me and my team it was a wonderful experience working with Fahad.',
+        "Fahad is a wonderful developer. He knew exactly how to manage and find the right solutions to our problem (which wasn't easy at all to manage) and proposed the appropriate options then succeeded in his work. I unreservedly recommend him! Keep up doing the that great work!",
       customerName: 'Ayoub Fakir',
-      designation: 'Parcelist',
+      links: [
+        {
+          text: 'TEDx Speaker',
+          link: 'https://www.youtube.com/watch?v=-jm5Fw0F-ug',
+        },
+        {
+          text: 'ScalaIO FR Speaker',
+          link: 'https://www.youtube.com/watch?v=IbLh8-8rsvo',
+        },
+      ],
+      designation: 'Solution Designer, ReportBrain',
       avatar: ayoub,
     },
 
@@ -121,6 +138,7 @@ function getCarouselItems() {
 const MultipleDesignBlocks = () => {
   let [currentCarouselItem, setCarouselItem] = useState(0);
   let ref = createRef();
+  let [popupStatus, setPopupStatus] = useState(false);
 
   function respondBack() {
     let elm = ref.current;
