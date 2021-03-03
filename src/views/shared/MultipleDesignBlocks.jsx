@@ -248,14 +248,7 @@ const MultipleDesignBlocks = () => {
                   </p>
                 </Col>
                 {getCarouselItems()[currentCarouselItem].testimonialLink && (
-                  <Col
-                    md='6'
-                    className='client-testimonial-video'
-                    style={{
-                      marginRight: '-2.6rem',
-                      transform: 'translateY(-6.5rem)',
-                    }}
-                  >
+                  <Col md='6' className='client-testimonial-video'>
                     <div className='browser absolute shadow lg'>
                       <div className='screen shadow-box'>
                         <img
@@ -384,8 +377,7 @@ const MultipleDesignBlocks = () => {
           </span>
           {popupStatus && (
             <iframe
-              width='760'
-              height='428'
+              className='popup-youtube-link'
               src={getCarouselItems()[currentCarouselItem].testimonialLink}
               frameborder='0'
               allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'

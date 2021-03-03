@@ -24,7 +24,7 @@ html {
   scroll-behavior: smooth;
 }
 
-hr[class*="bg"] {
+hr[class*='bg'] {
   border-top: 0;
   height: 1px;
 }
@@ -210,4 +210,35 @@ hr[class*="bg"] {
 
 .transition {
   transition: all 1s ease;
+}
+.client-testimonial-video {
+  margin-right: -2.6rem;
+  transform: translateY(-6.5rem);
+}
+.popup-youtube-link {
+  width: 760px;
+  height: 428px;
+}
+
+@media (max-width: 768px) {
+  .popup-youtube-link {
+    width: 640px;
+    height: 360px;
+  }
+  .client-testimonial-video {
+    margin-right: 0;
+    transform: translateY(0);
+  }
+}
+@media (max-width: 576px) {
+  .popup-youtube-link {
+    width: 470px;
+    height: 264px;
+  }
+}
+@media (max-width: 425px) {
+  .popup-youtube-link {
+    width: 400px;
+    height: 225px;
+  }
 }
