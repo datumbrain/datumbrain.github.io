@@ -171,8 +171,7 @@ const Heading = () => {
           </span>
           {popupStatus && (
             <iframe
-              width='760'
-              height='428'
+              className='popup-youtube-link'
               src='https://www.youtube.com/embed/Sbcx2dLcXkM'
               frameBorder='0'
               allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
