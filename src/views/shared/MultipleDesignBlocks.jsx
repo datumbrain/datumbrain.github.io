@@ -248,7 +248,14 @@ const MultipleDesignBlocks = () => {
                   </p>
                 </Col>
                 {getCarouselItems()[currentCarouselItem].testimonialLink && (
-                  <Col md='4' className='client-testimonial'>
+                  <Col
+                    md='6'
+                    className='client-testimonial-video'
+                    style={{
+                      marginRight: '-2.6rem',
+                      transform: 'translateY(-6.5rem)',
+                    }}
+                  >
                     <div className='browser absolute shadow lg'>
                       <div className='screen shadow-box'>
                         <img
@@ -269,47 +276,49 @@ const MultipleDesignBlocks = () => {
                   </Col>
                 )}
               </div>
-              <p
-                className='lead text-muted mt-0'
-                style={{
-                  width: '60%',
-                  fontStyle: 'italic',
-                }}
-              >
-                <span
-                  className='py-3 '
-                  style={{
-                    marginLeft: '-30px',
-                    transform: 'translateY(40px)',
-                    display: 'inline-block',
-                    opacity: 0.3,
-                  }}
-                >
-                  <FontAwesomeIcon icon={faQuoteLeft} />
-                </span>
-
+              <div className='client-testimonial-text'>
                 <p
-                  ref={ref}
+                  className='lead text-muted mt-0'
                   style={{
-                    transition: 'all 150ms ease',
-                    overflow: 'hidden',
+                    width: '60%',
+                    fontStyle: 'italic',
                   }}
                 >
-                  {/*Our team has worked on some really awesome products and*/}
-                  {/*delivered exceptional solutions.*/}
-                  {getCarouselItems()[currentCarouselItem].quote}
-                </p>
+                  <span
+                    className='py-3 '
+                    style={{
+                      marginLeft: '-30px',
+                      transform: 'translateY(40px)',
+                      display: 'inline-block',
+                      opacity: 0.3,
+                    }}
+                  >
+                    <FontAwesomeIcon icon={faQuoteLeft} />
+                  </span>
 
-                <span
-                  className='d-flex justify-content-end'
-                  style={{
-                    transform: 'translateY(-20px)',
-                    opacity: 0.3,
-                  }}
-                >
-                  <FontAwesomeIcon icon={faQuoteRight} />
-                </span>
-              </p>
+                  <p
+                    ref={ref}
+                    style={{
+                      transition: 'all 150ms ease',
+                      overflow: 'hidden',
+                    }}
+                  >
+                    {/*Our team has worked on some really awesome products and*/}
+                    {/*delivered exceptional solutions.*/}
+                    {getCarouselItems()[currentCarouselItem].quote}
+                  </p>
+
+                  <span
+                    className='d-flex justify-content-end'
+                    style={{
+                      transform: 'translateY(-20px)',
+                      opacity: 0.3,
+                    }}
+                  >
+                    <FontAwesomeIcon icon={faQuoteRight} />
+                  </span>
+                </p>
+              </div>
             </div>
 
             <Link
@@ -375,8 +384,8 @@ const MultipleDesignBlocks = () => {
           </span>
           {popupStatus && (
             <iframe
-              width='560'
-              height='315'
+              width='760'
+              height='428'
               src={getCarouselItems()[currentCarouselItem].testimonialLink}
               frameborder='0'
               allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
