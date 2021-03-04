@@ -229,6 +229,9 @@ hr[class*='bg'] {
     margin-right: 0;
     transform: translateY(0);
   }
+  .scalable-img {
+    bottom: auto !important;
+  }
 }
 @media (max-width: 576px) {
   .popup-youtube-link {
