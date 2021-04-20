@@ -13,12 +13,15 @@ p {
 }
 
 .swiper-container {
-  padding-top: 35px;
   text-align: center;
   .swiper-pagination-top {
     bottom: auto;
     top: 0;
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 hr[class*='bg'] {
@@ -29,18 +32,17 @@ hr[class*='bg'] {
 .off-left-background {
   background-position: -60px 20px;
   transform: translate3d(0, 0, 0);
-  transition: all .4s ease;
+  transition: all 0.4s ease;
 
   &:hover {
     background-position: -60px 0px;
-    transform:translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
   }
 }
 
 .nav-process {
   min-height: 60px;
 }
-
 
 .carousel-card {
   display: flex;
@@ -60,7 +62,6 @@ hr[class*='bg'] {
     }
   }
 
-
   &__video {
     width: 450px;
     height: 270px;
@@ -71,7 +72,6 @@ hr[class*='bg'] {
     video {
       height: 100%;
       width: 100%;
-
     }
   }
 }
@@ -87,8 +87,6 @@ hr[class*='bg'] {
   align-items: center;
 }
 
-
-
 .control-left {
   left: -60px;
 }
@@ -97,9 +95,9 @@ hr[class*='bg'] {
   right: -60px;
 }
 
-.back-link:hover .icon{
+.back-link:hover .icon {
   //transition: all 150ms ease-in;
-    transform: translateX(-6px);
+  transform: translateX(-6px);
 }
 
 .mb-30 {
@@ -108,7 +106,6 @@ hr[class*='bg'] {
 
 .custom-modal {
   position: fixed;
-
 
   top: 0;
   left: 0;
@@ -139,7 +136,6 @@ hr[class*='bg'] {
         width: 30px;
         height: 30px;
       }
-
     }
 
     iframe {
@@ -151,7 +147,6 @@ hr[class*='bg'] {
   display: flex;
   justify-content: center;
   align-items: center;
-
 
   .play-icon {
     position: absolute;
@@ -165,7 +160,6 @@ hr[class*='bg'] {
     cursor: pointer;
 
     &:hover {
-
       transform: scale(1.1);
       transition: all 150ms ease;
     }
@@ -203,10 +197,51 @@ hr[class*='bg'] {
   }
 }
 
-.animation-expand {
-  //animation: expand 5s ease;
+// .animation-expand {
+//   //animation: expand 5s ease;
+// }
+.text-primary-go {
+  color: #6ad8e5;
+}
+
+.text-primary-scala {
+  color: #eb7e78;
 }
 
 .transition {
   transition: all 1s ease;
+}
+.client-testimonial-video {
+  margin-right: -2.6rem;
+  transform: translateY(-6.5rem);
+}
+.popup-youtube-link {
+  width: 760px;
+  height: 428px;
+}
+
+@media (max-width: 768px) {
+  .popup-youtube-link {
+    width: 640px;
+    height: 360px;
+  }
+  .client-testimonial-video {
+    margin-right: 0;
+    transform: translateY(0);
+  }
+  .scalable-img {
+    bottom: auto !important;
+  }
+}
+@media (max-width: 576px) {
+  .popup-youtube-link {
+    width: 470px;
+    height: 264px;
+  }
+}
+@media (max-width: 425px) {
+  .popup-youtube-link {
+    width: 400px;
+    height: 225px;
+  }
 }

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="101px" height="97px" viewBox="0 0 101 97" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>db_logo</title>
+    <desc>Created with Sketch.</desc>
+    <g id="dark" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="monogram-light" transform="translate(-146.000000, -148.000000)">
+            <g id="db_logo" transform="translate(147.000000, 150.000000)">
+                <g id="db_icon">
+                    <path d="M91.9285714,0 L68.7927965,92.825 L0,26.369319 L91.9285714,0 Z" id="triangle" stroke="#4A4A4A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="8"></path>
+                    <g id="graph" transform="translate(8.000000, 0.000000)" fill="#FFC952" stroke="#FFC952">
+                        <ellipse id="Oval" cx="12.625" cy="12.3375" rx="12.375" ry="12.3375"></ellipse>
+                        <ellipse id="Oval" cx="46.8035714" cy="39.3625" rx="17.0892857" ry="17.0375"></ellipse>
+                        <ellipse id="Oval" cx="83.9285714" cy="22.325" rx="7.07142857" ry="7.05"></ellipse>
+                        <ellipse id="Oval" cx="33.25" cy="83.425" rx="10.6071429" ry="10.575"></ellipse>
+                        <path d="M13.2142857,12.925 L46.2142857,38.775" id="Line" stroke-width="5" stroke-linecap="square"></path>
+                        <path d="M46.2142857,38.775 L83.9285714,22.325" id="Line-2" stroke-width="5" stroke-linecap="square"></path>
+                        <path d="M46.2142857,38.775 L35.6071429,78.2314277" id="Line-3" stroke-width="5" stroke-linecap="square"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
