@@ -45,7 +45,7 @@
     "bootstrap": "^4.3.1",
     "classnames": "2.2.6",
     "moment": "2.24.0",
-    "node-sass": "4.12.0",
+    "node-sass": "4.13.1",
     "odometer": "^0.4.8",
     "pe7-icon": "^1.0.4",
     "react": "16.8.6",
