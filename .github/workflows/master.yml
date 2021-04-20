@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: deploy-main-tabularjson-site
+name: deploy-master-datumbrain-site
 
 # Controls when the action will run. 
 on:
