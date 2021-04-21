@@ -107,7 +107,7 @@ class DefaultNavbar extends React.Component {
                 <NavLink href='#about'>about</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href='#portfolio'>portfolio</NavLink>
+                <NavLink href='#reviews'>reviews</NavLink>
               </NavItem>
 
               <NavItem>

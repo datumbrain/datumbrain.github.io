@@ -175,7 +175,7 @@ const MultipleDesignBlocks = () => {
   }
 
   return (
-    <section id='portfolio' className='section powered-design'>
+    <section id='reviews' className='section powered-design'>
       <div className='shapes-container'>
         <div className='shape shape-circle shape-circle-1'>
           <Fade bottom right duration={1500}>
