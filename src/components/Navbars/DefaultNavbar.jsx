@@ -132,7 +132,16 @@ class DefaultNavbar extends React.Component {
                   href='https://www.upwork.com/ag/datumbrain/'
                   style={{}}
                 >
-                  Upwork
+                  upwork
+                </NavLink>
+              </NavItem>
+              <NavItem className='d-flex align-items-center'>
+                <NavLink
+                  target={'blank'}
+                  href='https://tabularjson.com/'
+                  style={{}}
+                >
+                  try TabularJSON
                 </NavLink>
               </NavItem>
             </Nav>
