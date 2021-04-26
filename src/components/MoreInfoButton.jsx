@@ -1,14 +1,22 @@
-import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Link } from 'react-router-dom';
 
-const MoreInfoButton = props => {
+const MoreInfoButton = (props) => {
+  const handleClick = (e) => {
+    e.preventDefault();
+    window.open(props?.to, '_blank');
+  };
   return (
-    <Link to={props.to} className={`more-link ${props.className}`} {...props}>
+    <Link
+      onClick={handleClick}
+      className={`more-link ${props.className}`}
+      {...props}
+    >
       {props.text}
       <FontAwesomeIcon
-        icon={["fas", "long-arrow-alt-right"]}
-        className="icon"
+        icon={['fas', 'long-arrow-alt-right']}
+        className='icon'
       />
     </Link>
   );
