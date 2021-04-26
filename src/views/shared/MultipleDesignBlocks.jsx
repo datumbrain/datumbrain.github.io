@@ -1,19 +1,15 @@
-import React, { createRef, useEffect, useState } from 'react';
-import classNames from 'classnames/bind';
+import React, { createRef, useState } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import MoreInfoButton from 'components/MoreInfoButton';
-import Tilt from 'react-tilt';
 import Fade from 'react-reveal/Fade';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faCoffee,
   faQuoteLeft,
   faQuoteRight,
   faLongArrowAltLeft,
 } from '@fortawesome/free-solid-svg-icons';
 import { faTimes, faPlay } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
-// import firstVideo from "../../assets/img/carousel_video.mp4";
 
 import skyler from '../../assets/img/skylerReeves.jpg';
 import shmuel from '../../assets/img/shmuel.png';
@@ -22,36 +18,7 @@ import alex from '../../assets/img/alexander_k.jpg';
 import ibrahim from '../../assets/img/ibrahim.jpg';
 import fotios from '../../assets/img/fotios.png';
 import ayoub from '../../assets/img/Ayoub-Fakir-1.jpg';
-// import secondVideo from "../../assets/img/second_video.mp4";
-// import thirdVideo from "../../assets/img/third_video.mp4";
 import noUserImage from '../../assets/img/user_3.jpg';
-
-const renderItems = () => {
-  let items = [];
-
-  for (let i = 1; i < 4; i++) {
-    items.push(
-      <Tilt options={{ max: 20, glare: true, maxGlare: 0.4 }} key={i}>
-        <div
-          className={classNames(
-            'rounded tilt overflow-hidden shadow-box shadow-hover bg-contrast',
-            { 'mt-5': i > 1 }
-          )}
-        >
-          <figure>
-            <img
-              src={require(`assets/img/screens/app/pieces/${i}.png`)}
-              className='img-responsive'
-              alt=''
-            />
-          </figure>
-        </div>
-      </Tilt>
-    );
-  }
-
-  return items;
-};
 
 function getCarouselItems() {
   return [
@@ -210,10 +177,9 @@ const MultipleDesignBlocks = () => {
                         getCarouselItems()[currentCarouselItem].avatar ||
                         noUserImage
                       }
-                      alt='user image'
+                      alt='user'
                     />
                   </div>
-
                   <h5
                     className='bold mb-0'
                     style={{
@@ -329,42 +295,7 @@ const MultipleDesignBlocks = () => {
               className='btn btn-outline-alternate more-link mt-0'
               text='Next'
             />
-
-            {/*<a href="mailto:contact@predictdata.io">Get Started Now!</a>*/}
           </Col>
-
-          {/*<Col md="6">*/}
-          {/*  /!*{renderItems()}*!/*/}
-
-          {/*  <div className="carousel-card">*/}
-
-          {/*    <div className="carousel-card__video">*/}
-          {/*      <video autoPlay src={getCarouselItems()[currentCarouselItem].video}>*/}
-          {/*        Your browser does not support the HTML5 Video element.*/}
-          {/*      </video>*/}
-          {/*    </div>*/}
-
-          {/*    <div className="customer-details w-100" style={{*/}
-          {/*      paddingLeft: "60px",*/}
-          {/*      paddingTop: 30*/}
-          {/*    }}>*/}
-          {/*      <ul className="list-unstyled">*/}
-          {/*        <li className="list-item">*/}
-          {/*          <div className="media">*/}
-          {/*            <div className="media-body">*/}
-          {/*              <h5 className="bold">{getCarouselItems()[currentCarouselItem].customerName}</h5>*/}
-          {/*              <p className="my-0">*/}
-          {/*                {getCarouselItems()[currentCarouselItem].customerReview}*/}
-          {/*              </p>*/}
-          {/*            </div>*/}
-          {/*          </div>*/}
-          {/*        </li>*/}
-
-          {/*      </ul>*/}
-          {/*    </div>*/}
-          {/*  </div>*/}
-
-          {/*</Col>*/}
         </Row>
       </Container>
       <div className={`custom-modal ${popupStatus ? 'd-flex' : 'd-none'}`}>
@@ -377,6 +308,7 @@ const MultipleDesignBlocks = () => {
           </span>
           {popupStatus && (
             <iframe
+              title='testimonial'
               className='popup-youtube-link'
               src={getCarouselItems()[currentCarouselItem].testimonialLink}
               frameborder='0'

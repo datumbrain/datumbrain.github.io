@@ -1,8 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import classNames from 'classnames/bind';
-
-// reactstrap components
 import { NavbarBrand, NavItem, NavLink, Nav, Container } from 'reactstrap';
 
 class DefaultNavbar extends React.Component {
@@ -119,6 +117,11 @@ class DefaultNavbar extends React.Component {
                 </NavLink>
               </NavItem>
               <NavItem className='d-flex align-items-center'>
+                <NavLink target={'blank'} href='https://tabularjson.com/'>
+                  try TabularJSON
+                </NavLink>
+              </NavItem>
+              <NavItem className='d-flex align-items-center'>
                 <img
                   src={require('../../assets/img/upwork_icon.png')}
                   style={{
@@ -130,18 +133,8 @@ class DefaultNavbar extends React.Component {
                 <NavLink
                   target={'blank'}
                   href='https://www.upwork.com/ag/datumbrain/'
-                  style={{}}
                 >
                   upwork
-                </NavLink>
-              </NavItem>
-              <NavItem className='d-flex align-items-center'>
-                <NavLink
-                  target={'blank'}
-                  href='https://tabularjson.com/'
-                  style={{}}
-                >
-                  try TabularJSON
                 </NavLink>
               </NavItem>
             </Nav>

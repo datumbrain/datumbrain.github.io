@@ -3,11 +3,7 @@ import { Container, Row, Col } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Fade from 'react-reveal/Fade';
 
-import {
-  faLightbulb,
-  faHammer,
-  faRedoAlt,
-} from '@fortawesome/free-solid-svg-icons';
+import { faHammer, faRedoAlt } from '@fortawesome/free-solid-svg-icons';
 import { faTimes, faPlay } from '@fortawesome/free-solid-svg-icons';
 const shapes = [
   { duration: 1500, delay: 100 },
@@ -176,6 +172,7 @@ const Heading = () => {
               frameBorder='0'
               allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
               allowFullScreen
+              title='company intro'
             />
           )}
         </div>
